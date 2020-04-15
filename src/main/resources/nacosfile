@@ -1,0 +1,31 @@
+user:
+    name: tomtom
+    age: 66
+
+server:
+    port: 8082
+
+management:
+    endpoints:
+        jmx:
+            exposure:
+                include: "*"
+        web:
+            exposure:
+                include: "*"
+        health:
+            show-details: always
+
+
+
+spring:
+    cloud:
+        alicloud:
+            access-key: "****"
+            secret-key: "****"
+
+
+
+feign:
+    hystrix:
+        enabled: true
